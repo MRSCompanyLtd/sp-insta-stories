@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "sp-insta-stories-client-side-solution",
+    "id": "5e1f29c7-381f-495c-bb9e-3da8f244d419",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "MRS Company Ltd",
+      "websiteUrl": "https://mrscompany.com",
+      "privacyUrl": "https://mrscompany.com/policies",
+      "termsOfUseUrl": "https://mrscompany.com/policies",
+      "mpnId": "65260"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "sp-insta-stories description"
+      },
+      "longDescription": {
+        "default": "sp-insta-stories description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "sp-insta-stories Feature",
+        "description": "The feature that activates elements of the sp-insta-stories solution.",
+        "id": "d76bd300-9538-44ad-9574-b4104c245176",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/sp-insta-stories.sppkg"
+  }
+}
