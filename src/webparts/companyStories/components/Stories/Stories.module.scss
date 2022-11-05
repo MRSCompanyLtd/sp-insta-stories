@@ -1,0 +1,142 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.progress {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    padding: 0 14px;
+}
+
+.progressBar {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.2) 50%);
+    background-size: 200% 100%;
+    flex-grow: 1;
+    height: 2px;
+    margin: 0 6px;
+}
+
+.past {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.6) 100%, rgba(255, 255, 255, 0.2) 0%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: none;
+}
+
+.active {
+    background-position: left bottom;
+}
+
+.inactive {
+    background-position: right bottom;
+}
+
+.stories {
+    height: 576px;
+    width: 360px;
+    background: silver;
+    position: relative;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.storyAuthor {
+    display: flex;
+    position: absolute;
+    top: 48px;
+    left: 16px;
+    height: 48px;
+    padding: 0 8px;
+    border-radius: 18px;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    color: white !important;
+    z-index: 1;
+
+    &:hover {
+        box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.15);
+    }
+}
+
+.storyContent {
+    display: flex;
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+    max-height: 64px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 2px 8px;
+    border-radius: 16px;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    color: white !important;
+    line-height: 20px;
+    overflow: hidden;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        float: left;
+        width: 5px;
+        height: 200px;
+    }
+
+    &> *:first-child {
+        float: right;
+        width: 100%;
+        margin-left: -5px;
+    }
+
+    &::after {
+        content: "\02026";
+        box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        float: right;
+        position: relative;
+        top: -25px;
+        left: 100%;
+        width: 3em;
+        margin-left: -3em;
+        padding-right: 5px;
+        text-align: right;
+        background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white), color-stop(50%, white));
+        background: -moz-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+        background: -o-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+        background: -ms-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+    }
+}
+
+.left {
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 50%;
+}
+
+.right {
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 50%;
+}
