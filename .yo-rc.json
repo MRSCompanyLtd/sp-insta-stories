@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "packageManager": "yarn",
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.0",
+    "libraryName": "sp-insta-stories",
+    "libraryId": "5e1f29c7-381f-495c-bb9e-3da8f244d419",
+    "environment": "spo",
+    "solutionName": "sp-insta-stories",
+    "solutionShortDescription": "sp-insta-stories description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
