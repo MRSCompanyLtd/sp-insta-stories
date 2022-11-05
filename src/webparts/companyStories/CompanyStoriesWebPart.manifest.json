@@ -6,15 +6,15 @@
   "version": "*",
   "manifestVersion": 2,
   "requiresCustomScript": false,
-  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportedHosts": ["SharePointWebPart"],
   "supportsThemeVariants": true,
 
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
     "group": { "default": "Other" },
     "title": { "default": "Company Stories" },
-    "description": { "default": "Company Stories description" },
-    "officeFabricIconFontName": "Page",
+    "description": { "default": "Displays images from a SharePoint list similar to Instagram stories" },
+    "officeFabricIconFontName": "Picture",
     "properties": {
       "title": "Company Stories"
     }
