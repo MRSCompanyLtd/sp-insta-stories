@@ -52,9 +52,11 @@ const CompanyStories: React.FC<ICompanyStoriesProps> = ({
       setStories(items);
     }
 
-    Promise.resolve(get().then(() => {
-      setLoading(false);
-    }).catch(() => setLoading(false))).catch(() => setLoading(false));
+    if (selectedList !== undefined) {
+      Promise.resolve(get().then(() => {
+        setLoading(false);
+      }).catch(() => setLoading(false))).catch(() => setLoading(false));
+    }
   }, [selectedList, graph, sp]);
 
   return (
