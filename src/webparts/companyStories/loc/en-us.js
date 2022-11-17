@@ -1,6 +1,6 @@
 define([], function() {
   return {
-    "PropertyPaneDescription": "Enter the webpart details here.",
+    "PropertyPaneDescription": "Create a custom list and add an Image (image) field, a Content (text) field, Author (person lookup) field, and Active (Y/N) field.",
     "BasicGroupName": "Details",
     "TitleFieldLabel": "Webpart Title",
     "TitleFieldPlaceholder": "Enter webpart title",
